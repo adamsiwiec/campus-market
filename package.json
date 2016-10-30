@@ -4,16 +4,19 @@
   "private": true,
   "scripts": {
     "start": "DEBUG=campus:* node ./bin/www",
-    "startfast": "node app.js"
+    "startfast": "node app.js",
+    "test": "mocha tests/tests.js"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
+    "chai": "^3.5.0",
     "connect-redis": "^3.1.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "express": "~4.13.4",
     "express-session": "^1.14.1",
     "jsonwebtoken": "^7.1.9",
+    "mocha": "^3.1.2",
     "mongoose": "^4.6.4",
     "morgan": "~1.7.0",
     "passport": "^0.3.2",
@@ -22,6 +25,7 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.0.0",
     "pug": "^2.0.0-beta6",
+    "request": "^2.76.0",
     "serve-favicon": "~2.3.0",
     "socket.io": "^1.5.1"
   }
